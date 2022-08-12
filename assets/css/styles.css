@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;400;500&display=swap');
+
+:root {
+    --main-color: rgb(73, 71, 71);
+    --black:#13131;
+    --bg:#010103;
+    --border:.1rem solid rgba(225,225,225,.3);
+}
+
+*{
+    font-family:'Maitree', serif; 
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s liner;
+}
+
+html {
+    font-size: 90%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 5rem;
+}
+body {
+    background: var(--bg);
+}
+section{
+    padding: 3rem 7%;
+}
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1000;
+
+}
+
+.header .logo img {
+    height: 4rem;
+}
+.header .navbar a {
+    cursor:pointer;
+    margin:0 1rem;
+    font-size:1rem;
+    color:white;
+
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+
+}
+
+.header .icons div{
+    color: white;
+    cursor: pointer;
+    font-size:2.3rem;
+    margin-left: 2rem;
+
+}
+
+.header .icons div:hover{
+color:var(--main-color)
+}
+#menu-btn {
+    display: none;
+}
+
+@media(max-width:991px) {
+    html{
+        font-size: 70%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding: 3rem;
+    }
+}
+
+
+@media (max-width:768px){
+    #menu-btn {
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height:calc(100vh- 9.5rem)
+    }
+
+  .header .navbar.active {
+      right:0;
+}
+    .header .navbar a {
+        color: var(--black);
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size:1rem;
+
+    }
+   
+}
+
+.home {
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    background:url(../img/alfons-morales-YLSwjSy7stw-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-size: center;
+
+}
+
+.blogs .box-container{
+    
+
+}
