@@ -92,6 +92,12 @@ color:var(--main-color)
 #menu-btn {
     display: none;
 }
+.btn {
+    color: aqua ;
+}
+.btn:hover {
+    color:var(--main-color) ;
+}
 
 @media(max-width:991px) {
     html{
@@ -179,7 +185,7 @@ color:var(--main-color)
 .blogs .box-container .box .content .title  {
     font-size: 2.5rem;
     line-height: 1.5;
-    color:#fff;
+    color:aqua;
 }
 
 .blogs .box-container .box .content .title:hover {
@@ -199,6 +205,50 @@ font-size: 2rem;
     color: #fff;
 
 }
+
+
+.container{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 1.5rem;
+    background:black;
+
+}
+
+.container .posts-container .post {
+    width: 100%;
+    padding: 2rem;
+    background: black;
+    border:var(--border);
+    border-radius: .5rem;
+}
+
+.image {
+    height: 40rem;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit:cover;
+
+}
+
+.title {
+    padding-top: 1.5rem;
+    font-size: 2.5rem;
+    color:aqua;
+}
+.text {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
