@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;400;500&display=swap');
 
 :root {
-    --main-color: rgb(73, 71, 71);
+    --main-color: rgb(203, 202, 202);
     --black:#13131;
     --bg:#010103;
-    --border:.1rem solid rgba(225,225,225,.3);
+    --border:.7rem solid rgba(251, 248, 248, 0.793);
 }
 
 *{
@@ -16,7 +16,7 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .3s liner;
+    transition: .5s liner;
 }
 
 html {
@@ -58,8 +58,24 @@ section{
     right:0;
     z-index: 1000;
 
+
 }
 
+.webinfo {
+    color:#fff;
+    font-size: 1rem;
+    background-color: #010103;
+    margin-top: 130px;
+    max-width:600px;
+}
+
+
+.Writing {
+    background-color: rgb(203, 202, 202);
+    margin-top: 130px;
+    max-width:1200px;
+
+}
 .header .logo img {
     height: 4rem;
 }
@@ -140,11 +156,18 @@ color:var(--main-color)
    
 }
 
+.content {
+
+    font-size: 2rem;
+    color: white;
+
+}
+
 .home {
     min-height:100vh;
     display:flex;
     align-items: center;
-    background:url(../img/alfons-morales-YLSwjSy7stw-unsplash.jpg) no-repeat;
+    background:url(../img/alex-knight-2EJCSULRwC8-unsplash.jpg) no-repeat;
     background-size: cover;
     background-size: center;
 
@@ -152,8 +175,8 @@ color:var(--main-color)
 
 .blogs .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
-    gap:1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+    gap:1rem;
 }
 
 .blogs .box-container .box {
@@ -161,7 +184,7 @@ color:var(--main-color)
 }
 
 .blogs .box-container .box .image {
-    height: 25rem;
+    height: 20rem;
     overflow:hidden;
     width:100%;
 }
@@ -174,23 +197,24 @@ color:var(--main-color)
 
 .blogs .box-container .box:hover .image img {
 
-    transform: scale(1.2)
+  
+    transform: scale(1.1)
+  
+    
 }
 
 .blogs .box-container .box .content{
-    padding: 2rem;
+    padding: 1rem;
 
 }
 
 .blogs .box-container .box .content .title  {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     color:aqua;
 }
 
-.blogs .box-container .box .content .title:hover {
-    color: var(--main-color);
-}
+
 
 .blogs .box-container .box .content .span {
     color:var(--main-color);
@@ -200,7 +224,7 @@ font-size: 2rem;
 }
 
 .blogs .box-container .box .content p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height:1.8;
     color: #fff;
 
@@ -209,8 +233,8 @@ font-size: 2rem;
 
 .container{
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
-    gap: 1.5rem;
+    grid-template-columns: 2fr 0.5fr;
+    gap: 5rem;
     background:black;
 
 }
@@ -218,27 +242,44 @@ font-size: 2rem;
 .container .posts-container .post {
     width: 100%;
     padding: 2rem;
-    background: black;
+    background:  rgb(203, 202, 202);;
     border:var(--border);
     border-radius: .5rem;
 }
 
 .image {
-    height: 40rem;
+    height: 20rem;
     width: 100%;
-    border-radius: .5rem;
+    border-radius: .7rem;
     object-fit:cover;
 
 }
 
 .title {
-    padding-top: 1.5rem;
+    padding-top: 1.2rem;
     font-size: 2.5rem;
     color:aqua;
 }
 .text {
     color: #fff;
 }
+
+
+footer{
+    position: absolute;
+    bottom: 100;
+    left: 0;
+    right: 0;
+    background: rgb(244, 241, 241);
+    height: auto;
+    width: 100vw;
+    padding-top: 200px;
+    color: #fff;
+}
+
+
+
+
 
 
 
