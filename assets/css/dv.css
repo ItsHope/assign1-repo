@@ -1,1 +1,260 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;400;500&display=swap');
+
+:root {
+    --main-color: rgb(203, 202, 202);
+    --black:#13131;
+    --bg:#010103;
+    --border:.7rem solid rgba(251, 248, 248, 0.793);
+}
+
+* 
+    
+    body {
+        background: #fefefe;
+        overflow-x: hidden;
+    }
+
+
+    *{
+        font-family:'Maitree', serif; 
+        margin:0; 
+        padding:0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: .5s liner;
+    }
+
+
+    html::-webkit-scrollbar{
+        width: .8rem;
+    }
+    
+    html::-webkit-scrollbar-track{
+        background: transparent;
+    }
+    
+    html::-webkit-scrollbar-thumb{
+        background: white;
+        border-radius: 5rem;
+    }
+    body {
+        background: var(--bg);
+    }
+    section{
+        padding: 3rem 7%;
+    }
+    
+    .header{
+        background: var(--bg);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 7%;
+        border-bottom: var(--border);
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        z-index: 1000;
+    
+    
+    }
+
+    .webinfo {
+        color:#fff;
+        font-size: 1rem;
+        background-color: #010103;
+        margin-top: 130px;
+        max-width:600px;
+    }
+    
+    
+    .Writing {
+        background-color: rgb(203, 202, 202);
+        margin-top: 130px;
+        max-width:1200px;
+    
+    }
+    .header .logo img {
+        height: 4rem;
+    }
+    .header .navbar a {
+        cursor:pointer;
+        margin:0 1rem;
+        font-size:1rem;
+        color:white;
+    
+    }
+    
+    .header .navbar a:hover{
+        color:var(--main-color);
+        border-bottom: .1rem solid var(--main-color);
+        padding-bottom: .5rem;
+    
+    }
+    
+    
+    html {
+        font-size: 90%;
+        overflow-x: hidden;
+        scroll-padding-top: 9rem;
+        scroll-behavior: smooth;
+    }
+    
+    .container {
+        max-width: 720px;
+    }
+    
+    h3  {
+        font-family: 'Monoton';
+     word-spacing: 10px;
+     color: aqua;
+        font-weight: 300;
+        font-size: 27px;
+        margin: 30px auto 50px auto;
+        line-height: 1.3;
+        border-bottom: solid 1px #999;
+    }
+    
+    span {
+        font-weight: 500;
+    }
+    
+    p , span{
+        color: white;
+       
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    
+    .filter {
+        width: 0;
+        height: 0;
+    }
+    
+    
+    
+    .colorBox {
+        width: 30px;
+        height: 20px;
+        vertical-align: bottom;
+        border: none;
+        border-radius: 3px;
+        display: inline-block;
+        margin-right: 10px;
+        background: #eee;
+        border: solid 1px #fff;
+        box-shadow: 0 0 4px 0 rgba(0,0,0,.2);
+    }
+    
+    .smm {
+        background: #0c91e9;
+    }
+    
+    .ot {
+        background: #ff4971;
+    }
+    
+    .oba {
+        background: #80fc46; 
+    }
+    
+    .or {
+        background: #8a8afe;
+    }
+    
+    .wd {
+        background: red;
+    }
+    
+    .if {
+        background: #edf73a;
+    }
+    
+    .gd {
+        background: #e7e9ed;
+    }
+    
+    path {
+        stroke: #fefefe;
+        stroke-width: 2px;
+    }
+    
+    .col-xs-5, .col-xs-12, .col-xs-7{
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    
+    .myTooltip {
+        -webkit-transition: 100ms all ease;
+        -moz-transition: 100ms all ease;
+        -o-transition: 100ms all ease;
+        -ms-transition: 100ms all ease;
+        transition: 100ms  all ease;
+        visibility: hidden;
+        z-index: 9999;
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        width: 100px;
+    }
+    
+    .tooltipContent {
+        text-align: center;
+        display: block;
+        width: 60px;
+        background: #555;
+        color: #fff;
+        padding: 5px 0;
+        line-height: 1;
+        font-size: 14px;
+        border-radius: 3px;
+        position: relative;
+    }
+    .tooltipContent::after {
+        content: '';
+        border-right: solid 0px transparent; 
+        border-left: solid 10px transparent;
+        border-top: solid 10px #555;
+        position: absolute;
+        bottom: -6px;
+        right: 0;
+    }
+    
+    @media screen and (max-width: 500px) {
+        p , span{
+            font-size: 13px;
+        }
+        .colorIcon {
+            vertical-align: bottom;
+        }
+        .col-xs-5, .col-xs-12, .col-xs-7{
+            padding: 0;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-top: 50px;
+            margin-bottom: 70px;
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
