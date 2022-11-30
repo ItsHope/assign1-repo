@@ -19,6 +19,17 @@
     transition: .5s liner;
 }
 
+h1 {
+    font-family: 'Monoton';
+    word-spacing: 10px;
+    color: aqua;
+       font-weight: 300;
+       font-size: 27px;
+       margin: 30px auto 50px auto;
+       line-height: 1.3;
+       border-bottom: solid 1px #999;
+}
+
 html {
     font-size: 90%;
     overflow-x: hidden;
@@ -276,6 +287,9 @@ footer{
     padding-top: 200px;
     color: #fff;
 }
+
+
+
 
 
 

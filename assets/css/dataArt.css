@@ -1,0 +1,65 @@
+body {
+	margin: 20px 0;
+	background-color: #cca;
+	color: #444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+
+a {
+	color: #a00;
+}
+
+Canvas {
+	background-color: #fff;
+	float: left;
+	margin-left: 10px;
+}
+
+#Graph1 {
+	margin-left: 0;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+.Clear {
+	clear: both;
+	overflow: hidden;
+	height: 0;
+}
+
+#Main {
+	background-color: #eee;
+	border: 1px solid #662;
+	margin: auto;
+	-moz-border-radius: 15px;
+	-moz-border-radius: 15px;
+	width: 650px;
+}
+
+#Inner {
+	padding: 0 20px 20px 20px;
+}
+
+#Graphs {
+	float: left;
+  margin-top: 40px;
+	width: 410px;
+  clear: both;
+}
+
+#Controls {
+	background-color: #ccd;
+	border: 1px solid #999;
+	float: left;
+	height: 118px;
+	margin-left: 10px;
+	padding: 15px 15px;
+	width: 250px;
+}
+
+#Controls > div {
+	margin-bottom: 20px;
+}
